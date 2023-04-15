@@ -1,5 +1,5 @@
-import { Text } from "react-native";
+import { Typography } from "../components/Typography";
 
 export default function StartPage() {
-  return <Text>Start Page</Text>;
+  return <Typography variant="BUTTON">Start Page</Typography>;
 }
