@@ -19,7 +19,7 @@ export const Typography = (
   if (props.variant === "BUTTON") {
     fontSize = 18;
     color = COLORS.TEXT_DEFAULT;
-    fontFamily = "VesperLibre-Medium";
+    fontFamily = "VesperLibre-Bold";
   } else if (props.variant === "TITLE") {
     fontSize = 38;
     (color = COLORS.BACKGROUND_DEFAULT), (fontFamily = "VesperLibre-Bold");
