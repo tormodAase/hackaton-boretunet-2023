@@ -18,7 +18,7 @@ export const Typography = (
   if (props.variant === "BUTTON") {
     fontSize = 18;
     color = COLORS.TEXT_DEFAULT;
-    fontFamily = "VesperLibre-Medium";
+    fontFamily = "VesperLibre-Bold";
   }
   return <Text style={{ fontSize, color, fontFamily }}>{props.children}</Text>;
 };
