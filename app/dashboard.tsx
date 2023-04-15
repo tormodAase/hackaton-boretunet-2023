@@ -1,6 +1,6 @@
 import { Text } from "react-native";
-import { HackatonButton } from "../components/ExampleButton";
+import { ExampleButton } from "../components/ExampleButton";
 
 export default function Dashboard() {
-  return <HackatonButton title="Dashboard Button" />;
+  return <ExampleButton title="Dashboard Button" />;
 }
