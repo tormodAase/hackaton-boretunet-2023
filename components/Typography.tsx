@@ -6,7 +6,8 @@ type TypographyVariants =
   | "HEADER_PRIMARY"
   | "HEADER_SECONDARY"
   | "HEADER_TERTIARY"
-  | "BUTTON";
+  | "BUTTON"
+  | "TITLE";
 
 export const Typography = (
   props: PropsWithChildren<{ color?: string; variant: TypographyVariants }>
@@ -19,6 +20,9 @@ export const Typography = (
     fontSize = 18;
     color = COLORS.TEXT_DEFAULT;
     fontFamily = "VesperLibre-Bold";
+  } else if (props.variant === "TITLE") {
+    fontSize = 38;
+    (color = COLORS.BACKGROUND_DEFAULT), (fontFamily = "VesperLibre-Bold");
   }
   return <Text style={{ fontSize, color, fontFamily }}>{props.children}</Text>;
 };
