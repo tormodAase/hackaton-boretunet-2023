@@ -1,5 +1,10 @@
-import { ExampleButton } from "../components/ExampleComponents/ExampleButton";
+import { SafeAreaView } from "react-native";
+import { Typography } from "../components/Typography";
 
 export default function Dashboard() {
-  return <ExampleButton title="Dashboard Button" />;
+  return (
+    <SafeAreaView>
+      <Typography variant="BUTTON">Test</Typography>
+    </SafeAreaView>
+  );
 }
